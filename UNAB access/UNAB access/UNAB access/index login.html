@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNAB Access</title>
+    <link rel="icon" href="logoUnabAccess.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+        }
+        .login-container {
+            width: 25%;
+            background-color: #ffffff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-right: 2px solid #000;
+            padding-right: 10px;
+        }
+        .login-container img {
+            width: 190px;
+            margin-bottom: 20px;
+        }
+        .login-container input {
+            width: 70%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            justify-items: center;
+        }
+        .login-container button {
+            width: 150%;
+            padding: 10px;
+            justify-items: center;
+            justify-content: center;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+    
+        
+        }
+        .main-container {
+            width: 55%;
+            height: 70%;
+            position: relative;
+            border-right: 2px solid #000;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .main-container img {
+            width: 100%;
+            height: 98%;
+            object-fit: cover;
+        }
+        .img-container {
+            width: 20%;
+            background-color: #ffffff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: right;
+        }
+        .sidebar-container {
+            width: 20%;
+            background-color: #fff;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            text-align: right;
+        }
+        .sidebar button {
+            display: block;
+            width: 95%;
+            margin: 10px 0;
+            padding: 13px;
+            border: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        footer {
+            background-color: #231F20;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            border-top: 3px solid #F89C1C;
+        }
+        .pieDePagina{
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-size: 10px;
+            justify-content: center;
+        }
+        .pieDePagina img{
+            height: 80px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="login-container">
+            <img src="UnabAccessLogin.png" alt="UNAB Access">
+            <input type="text" placeholder="Nusuario123">
+            <a href="file:///C:/Users/PORTBIBLIOTECA/Desktop/UNAB%20access/index%20crearUsuario.html" style="color: #000; font-size: 15px;">¿No tiene usuario?</a>
+            <input type="password" placeholder="****">
+            <a href="file:///C:/Users/PORTBIBLIOTECA/Desktop/UNAB%20access/indexOlvidoContra.html" style="color: #000; font-size: 15px;">¿Olvidó su contraseña?</a>
+            <br>
+            <br>
+            <form action="file:///C:/Users/PORTBIBLIOTECA/Desktop/UNAB%20access/wilson_dise%C3%B1o/principal.html">
+                <button>Ingresar</button>
+            </form>
+        </div>
+        <div class="main-container">
+            <img src="unabJardin.png" alt="UNAB Building">
+            <a href="https://unab.edu.co/gobierno-corporativo/#:~:text=El%20gobierno%20corporativo%20en%20la,y%20los%20grupos%20de%20inter%C3%A9s." target="_blank">
+                <img src="anuncioUnab.png" alt="UNAB notice" style="height: 190px; border-right: 1px solid #000; padding-right: 10px;">
+            </a>
+        </div>
+        <div class="img">
+            <img src="UnabAccesEncabezado.png" alt="UNAB Access" style="width: 280px;">
+            <div class="sidebar" style="align-items: center; justify-content: center; display: flex; flex-direction: column; align-items: center;">
+                <br>
+                <a style="color: #000; font-size: 25px; text-decoration: none; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" href="#" onclick="toggleServices('otros_servicios')">Otros web UNAB ☰</a>
+                <div id="otros_servicios" style="display: none; flex-direction: column;">
+                    <a href="https://unab.edu.co/impulsa/" target="_blank" style="text-decoration: none; color: #fff;">
+                        <button style="background-color: #772A91; color: #fff; padding: 10px;">
+                            Impulsa<br><span style="font-size: 14px;">Graduados</span>
+                        </button>
+                    </a>
+                    <a href="https://unabvirtual.unab.edu.co/" target="_blank" style="text-decoration: none; color: #fff;">
+                        <button style="background-color: #99CA3B; color: #fff; padding: 10px;">
+                            UNAB Virtual<br><span style="font-size: 14px;">Estudiantes Virtuales</span>
+                        </button>
+                    </a>
+                    <a href="https://unab.edu.co/" target="_blank" style="text-decoration: none; color: #fff;">
+                        <button style="background-color: #F89C1C; color: #fff; padding: 10px;">
+                            Página Principal<br><span style="font-size: 14px;">Público General</span>
+                        </button>
+                    </a>
+                </div>
+                <a style="color: #000; font-size: 25px; text-decoration: none; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" href="#" onclick="toggleServices('servicios_unab')">Servicios UNAB ☰</a>
+                <div id="servicios_unab" style="display: none; flex-direction: column;">
+                    <div style="display: flex;">
+                        <a href="https://accounts.google.com/v3/signin/identifier?ifkv=AaSxoQy6ei4tpSCO-3hrf_GOF_lNSihTT8y1fL11oNyMGjuHzjZWbFBFIBMdezo6GX37-j4mKTIVtw&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S336311687%3A1716696323842364&ddm=0" target="_blank" style="margin-right: 10px;">
+                            <button style="background-color: #fff; color: #000; display: flex; align-items: center; padding: 10px;">
+                                <img src="GMAIL-LOGO.png" alt="Icono de Gmail" style="width: 120px; margin-right: 10px;">
+                            </button>
+                        </a>
+                    
+                        <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.office.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=638522933844245984.NzRhMTEzYzAtNGZjNy00YmIwLWJjYzUtYjA1NTY4MTJhNWM4NmYzOTkzNWEtYTI1Ni00NDAyLWJjOWEtZjQ5MjQ2YWNlYTQy&ui_locales=es-ES&mkt=es-ES&client-request-id=44ef8ac0-f5a9-46a4-b6a8-619e529ca72e&state=3I3IA7zYTMZXRPpndBZ1Hk1qbXjCRL1N-N40cp7n_K49B0HM9Vvv2GNe4GvCqJdBPCHwcjRZ6dYlDM4C4udvJn1Mr9Ik2j-tVY6qa1AI95TbBZtD9FPRyuI7Laoqv-rpoGbpaESo-YSl04lHNhVeGJlAAvKsHIwiEMv4dGTZdLfBsqf0EQrpJe8d8b14hTrAAUX9elYee3103XG_gpTqY2BRjybZ-ZIsEGA1DXPzxi1aQThZMvDJjJJDUCMWF8CfM63H621x65QFwAPGgOgkCQ&x-client-SKU=ID_NET8_0&x-client-ver=7.3.1.0&sso_reload=true" target="_blank">
+                            <button style="background-color: #fff; color: #000; display: flex; align-items: center; padding: 10px;">
+                             <img src="officeLogo.png" alt="Icono de Office" style="width: 100px; height: 70px; margin-right: 10px;">
+                            </button>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <script>
+            function toggleServices(id) {
+                var servicesDiv = document.getElementById(id);
+                if (servicesDiv.style.display === "none") {
+                    servicesDiv.style.display = "flex";
+                } else {
+                    servicesDiv.style.display = "none";
+                }
+            }
+        </script>    
+        </div>
+    </div>
+    <footer>
+       <div class="pieDePagina">
+            <img src="logoUnabPie.png">
+
+            <ul class="InfoUNAB">
+                <p>Universidad Autonoma de Bucaramanga</p>
+                <p>Avenida 42 No. 48-11 | PBX (7)6436111</p>
+                <p>NIT: 890.200.499-9</p>
+                <p>© Todos los derechos reservados</p>
+            </ul>
+
+       </div>
+    </footer>
+    
+</body>
+</html>

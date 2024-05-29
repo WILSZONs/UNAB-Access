@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario UNAB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 130vh;
+            background-color: #f4f4f4;
+            background-image: url('unabJardin.png'); /* Fondo de la página */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #231F20;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid #F89C1C;
+        }
+        header img {
+            width: 250px;
+            margin-right: 10px;
+            justify-content: left;
+        }
+        header h1 {
+            width: 380%;
+            margin: 0;
+            font-size: 38px;
+            color: #fff;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left-column, .right-column {
+            padding: 20px;
+        }
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 400px;
+        }
+        .logo img {
+            width: 200px;
+            height: auto;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+            justify-content: center;
+        }
+        p {
+            font-size: 19px;
+            color: #555;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .button-top {
+            display: flex;
+            gap: 10px; /* Espacio entre los botones */
+            margin-bottom: 20px; /* Espacio debajo de los botones */
+        }
+        .footer {
+            background-color: #231F20;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            border-top: 3px solid #F89C1C;
+        }
+        .footer .pieDePagina {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 10px;
+        }
+        .footer img {
+            height: 80px;
+            width: 60px;
+        }
+        .InfoUNAB {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0 10px;
+            text-align: left;
+        }
+        .InfoUNAB p {
+            margin: 5px 0;
+            color: #fff;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div><img src="UnabAccessEncabezadoBlanco.png" alt="Logo UNAB"></div>
+        <div><h1>Usuario UNAB</h1></div>
+    </header>
+    <div class="main-content">
+        <div class="container">
+            <div class="left-column">
+                <div class="logo">
+                    <img src="UnabAccessCrear.png" alt="UNAB Access Logo">
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="button-top">
+                    <button style="background-color: #F89C1C;">Enviar al correo electronico</button>
+                    <button style="background-color: #99CA3B;">Atencion Personalizada</button>
+                </div>
+                <h1>Recuperar de contraseña!</h1>
+                <p>Ingrese el correo electronico de contacto que tiene registrado en nuestro sistema. Se enviará la nueva contraseña a esta cuenta.</p>
+                <div class="form-group">
+                    <input type="text" id="identificacion" name="identificacion" placeholder="Usuario">
+                    <input type="text" id="identificacion" name="identificacion" placeholder="Cedula">
+                    <input type="text" id="identificacion" name="identificacion" placeholder="Correo de contacto">
+                    <button onclick="enviar()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="pieDePagina">
+            <img src="logoUnabPie.png" alt="Logo UNAB">
+            <ul class="InfoUNAB">
+                <li><p>Universidad Autónoma de Bucaramanga</p></li>
+                <li><p>Avenida 42 No. 48-11 | PBX (7)6436111</p></li>
+                <li><p>NIT: 890.200.499-9</p></li>
+                <li><p>© Todos los derechos reservados</p></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function enviar() {
+            const identificacion = document.getElementById('identificacion').value;
+            if (identificacion) {
+                alert('Se envio correctamente');
+            } else {
+                alert('Campos vacios, llene el formulario y vuelva a intentar');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNAB access | Servicio para estudiantes</title>
+    <link rel="icon" href="logoUnabAccess.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        header {
+            background-color: #231F20;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            height: 95px;
+            border-bottom: 3px solid #F89C1C;
+        }
+
+        header div {
+            display: flex;
+            align-items: center;
+        }
+
+        header div+div {
+            border-left: 1px solid rgb(0, 0, 0);
+            padding-left: 15px;
+            margin-left: 15px;
+        }
+
+        header img {
+            height: 85px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        footer {
+            background-color: #231F20;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+            border-top: 3px solid #F89C1C;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            padding: 20px;
+            margin-top: 80px;
+        }
+
+        .seccion {
+            color: white;
+            font-weight: bold;
+            border-left: 1px solid white;
+            padding-left: 15px;
+            margin-left: 15px;
+            display: inline-block;
+        }
+
+        .seccion:first-child {
+            border-left: none;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .columnaR {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin-left: auto;
+            
+        }
+
+        .fila {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .columnaR .columna {
+            background-color: #fff;
+            padding: 10px;
+            flex: 1;
+            margin: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        .columna a{
+            color: #000;
+
+        }
+        .columna a:hover{
+            color: #F89C1C;
+        }
+
+        .columnaR .columna ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .columnaR .columna li {
+            text-align: left;
+            padding: 5px 0;
+        }
+
+        .imagen-botones {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+        }
+
+        .imagen-botones img {
+            max-width: 100%;
+            height: auto;
+            border-right: 2px solid #000;
+        }
+
+        .imagen-botones button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 17px;
+            display: block;
+        }
+
+        .pieDePagina {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-size: 10px;
+            justify-content: center;
+        }
+
+        .pieDePagina img {
+            height: 80px;
+            width: 60px;
+        }
+
+        .InfoUNAB {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="UnabAccessEncabezadoBlanco.png" alt="Logo">
+        <div>
+            <a href="file:///C:/Users/PORTBIBLIOTECA/Desktop/UNAB%20access/wilson_dise%C3%B1o/principal.html" class="seccion">Home</a>
+            <p class="seccion">Servicios <br> Electrónicos</p>
+            <p class="seccion">Servicios para <br> Estudiantes</p>
+            <p class="seccion">Apoyo al <br> Estudiante</p>
+            <p class="seccion">Información <br> Administrativa</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="imagen-botones">
+            <img src="Fachada-El-Jardin.jpg" alt="UNAB">
+        </div>
+        <div class="columnaR">
+            <div class="fila">
+                <div class="columna">
+                    <ul>
+                        <li><strong>Inscripción de Cursos</strong></li>
+                        <li><a href="https://miportalu.unab.edu.co/modulos/inscripciones/"target="_blank" style="text-decoration: none;">-Selección De Cursos Menores</li></a>
+                        <li><a href="https://intranet.unab.edu.co/modulos/inscripciones/"target="_blank"style="text-decoration: none;">-Turnos</li></a>
+                        <li><a href ="https://intranet.unab.edu.co/modulos/inicio/noticias.php?codigoNoticia=85296"target="_blank"style="text-decoration: none;">-Inscripción De Vacacionales Informática</li></a>
+                        <li>-<a href="https://intranet.unab.edu.co/modulos/proyeccion/"target="_blank"style="text-decoration: none;">Proyección De Cursos</li></a>
+                        <li>-<a href= "https://intranet.unab.edu.co/modulos/informatica/"target="_blank"style="text-decoration: none;">Informática</li></a>
+                        <li><a href="https://intranet.unab.edu.co/modulos/cursos/"target="_blank"style="text-decoration: none;">-Cursos Inscritos</li></a>
+                        <li><a href="https://intranet.unab.edu.co/modulos/certificadosAcademicos/certificadoNotas.php"target="_blank"style="text-decoration: none;">-Descargar Certificado De Notas</li></a>
+                        <li><a href="https://intranet.unab.edu.co/modulos/formularioPracticantes/index.php"target="_blank"style="text-decoration: none;">-Formulario Practicantes</li></a>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <ul>
+                        <li><strong>Trámites Financieros</strong></li>
+                        <li><a href ="https://intranet.unab.edu.co/modulos/creditos/index.php"target="_blank"style="text-decoration: none;">-Apoyo Financiero Directo</li></a>
+                        <li><a href ="https://www.unab.edu.co/feriadecreditovirtual/"target="_blank"style="text-decoration: none;">-Apoyo Financiero Externo</li></a>
+                        <li><a href ="https://miportalu.unab.edu.co/Archivos/?p=publicos/MAILING-ADMISIONES.png"target="_blank"style="text-decoration: none;">-Cronograma Fechas De Pago Primer Ingreso</li></a>
+                        <li><a href="https://miportalu.unab.edu.co/Archivos/?p=publicos/MAILING-MATRICULAS.png>"target="_blank" style="text-decoration: none;"-Fecha Pago Continuos</li></a>
+                        <li><a href= https://intranet.unab.edu.co/modulos/solicitudBecas/index.php target="_blank" style="text-decoration: none;">-Solicitud Becas (Rafael Ardila)</li></a>
+                        <li><a href="https://unab.edu.co/becas/pregrado/"target="_blank" style="text-decoration: none;">-Solicitudes Becas Y Descuentos</li></a>
+                        <li><a href="https://intranet.unab.edu.co/modulos/icetex/index.php"target="_blank" style="text-decoration: none;">-Renovación Créditos Icetex</li></a>
+                        <li><a href="https://intranet.unab.edu.co/modulos/inicio/procesarSolicitud.php?idMenu=147"target="_blank" style="text-decoration: none;">-Cupones</li></a>
+                        <li><a href="http://caronte.unab.edu.co/"target="_blank" style="text-decoration: none;"> -Devoluciones</li></a>
+                        <li>-<a href ="https://unab.edu.co/pqrsf/"target="_blank" style="text-decoration: none;">PQR</li></a>
+                        <li><a href ="http://caronte.unab.edu.co/"target="_blank" style="text-decoration: none;">-Facturación</li></a>
+                        <li><a href ="http://caronte.unab.edu.co/"target="_blank" style="text-decoration: none;">-Solicitud traslado Saldos</li></a>
+                        <li><a href="http://caronte.unab.edu.co/"target="_blank" style="text-decoration: none;">-Solicitudes Especiales</li></a>
+                        <li><a href ="http://caronte.unab.edu.co/portal"target="_blank" style="text-decoration: none;">-Retiro De Retención</li></a>
+                        <li><a href ="https://intranet.unab.edu.co/modulos/solicitudHorizontes/index.php"target="_blank" style="text-decoration: none;">-Solicitud Plan Horizontes</li></a>
+                        <li><a href ="http://caronte.unab.edu.co/"target="_blank" style="text-decoration: none;">-Revisión Estado De Cuenta</li></a>
+                        <li><a href ="http://caronte.unab.edu.co/"target="_blank" style="text-decoration: none;">-Solicitud Certificados</li></a>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <ul>
+                        <li><strong>Trámites Académicos</strong></li>
+                        <li><a href=https://intranet.unab.edu.co/modulos/datosPersonales/actualizacionEps.php?idMenu=111 style="text-decoration: none;">-Actualización EPS</li></a>
+                        <li><a href=https://docs.google.com/forms/d/e/1FAIpQLSfo1v2wzGn22HUxhBTn8o81Wfr70DmUzMD6Xjvmzcnlnip1Jw/closedform?pli=1 style="text-decoration: none;">-Registro Referidos</li></a>
+                        <li><a href=http://caronte.unab.edu.co/ style="text-decoration: none;">-Reconocimiento de Cursos</li></a>
+                        <li>-<a href =https://intranet.unab.edu.co/modulos/grados/ style="text-decoration: none;">Solicitud De Grado</li></a>
+                        <li><a href=http://caronte.unab.edu.co/ style="text-decoration: none;">-Solicitud De Certificados</li></a>
+                        <li><a href =https://intranet.unab.edu.co/modulos/inscripcionesEleccionesUnab/index.php style="text-decoration: none;">-Inscripción A Elecciones</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="columna">
+                    <ul>
+                        <li><strong>Pago de Servicios Estudiantiles</strong></li>
+                        <li><a href="https://intranet.unab.edu.co/modulos/recaudoServicios/pagoServicios.php"target="_blank" style="text-decoration: none;">-Servicios Académicos</li></a>
+                        <li><a href ="https://intranet.unab.edu.co/modulos/recaudoServicios/pagoCertificados.php"target="_blank" style="text-decoration: none;">-Certificados</li></a>
+                        <li><a href ="https://intranet.unab.edu.co/modulos/recaudoServicios/multasBiblioteca.php"target="_blank" style="text-decoration: none;">-Multa De Biblioteca</li></a>
+                        <li><a href ="https://intranet.unab.edu.co/modulos/recaudoServicios/derechosDeGrado.php "target="_blank"style="text-decoration: none;">-Derechos De Grado</li></a>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <ul>
+                        <li><strong>Información del Programa</strong></li>
+                        <li><a href="biblioteca.pnghttps://intranet.unab.edu.co/modulos/docentes/"target="_blank" style="text-decoration: none;">-Docentes</li></a>
+                        <li><a href="https://intranet.unab.edu.co/modulos/cronogramasAcademicos/inicio.php"target="_blank" style="text-decoration: none;"> -Cronograma Académico</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="pieDePagina">
+            <img src="logoPie.png" alt="Logo Pie">
+            <ul class="InfoUNAB">
+                <li>Universidad Autónoma de Bucaramanga</li>
+                <li>Avenida 42 No. 48-11 | PBX (7)6436111</li>
+                <li>NIT: 890.200.499-9</li>
+                <li>© Todos los derechos reservados</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

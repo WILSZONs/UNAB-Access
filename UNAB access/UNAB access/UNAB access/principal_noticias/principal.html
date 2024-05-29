@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNAB access | Principal</title>
+    <link rel="icon" href="imagenes/logoUnabAccess.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            width: 100%;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #231F20;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            box-sizing: border-box;
+            height: 95px;
+            border-bottom: 3px solid #F89C1C;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header div {
+            display: flex;
+            align-items: center;
+        }
+
+        header div+div {
+            border-left: 1px solid rgb(0, 0, 0);
+            padding-left: 15px;
+            margin-left: 15px;
+        }
+
+        header img {
+            height: 85px;
+            float: left;
+            margin-right: 15px;
+
+        
+        }
+        header a{
+            text-decoration: none;
+        }
+        footer {
+            background-color: #231F20;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .main-container {
+            margin-top: 90px;
+            display: flex;
+            width: 100%;
+            flex-grow: 1;
+        }
+
+        .seccion {
+            color: white;
+            font-weight: bold;
+            border-left: 1px solid white;
+            padding-left: 15px;
+            margin-left: 15px;
+            display: inline-block;
+        }
+
+        .seccion:first-child {
+            border-left: none;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .columna {
+            background-color: #354055;
+            width: 8%;
+            margin: 0 20px 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .columna p,
+        .columna a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .icono {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .icono img {
+            width: 40px;
+            height: auto;
+        }
+
+        .icono p {
+            margin-top: 10px;
+        }
+
+        main {
+            width: 40%;
+            padding: 20px;
+            margin-top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imagen-botones button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            font-size: 16px;
+            width: 70%;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 17px;
+        }
+
+        .imagen-botones img {
+            width: 80%;
+            height: auto;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-right: 2px solid #000;
+        }
+
+        .columnaR {
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 65px;
+            position: relative;
+            left: -100px;
+            bottom: -15px;
+            flex-grow: 1;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #231F20;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            border-top: 3px solid #F89C1C;
+        }
+
+        .pieDePagina {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-size: 10px;
+            justify-content: center;
+        }
+
+        .pieDePagina img {
+            height: 80px;
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/UnabAccessEncabezadoBlanco.png" alt="Logo">
+        <div>
+            <p class="seccion">Servicios <br> Electrónicos</p>
+            <a href="file:///C:/Users/PORTBIBLIOTECA/Desktop/UNAB%20access/prueba.html" class="seccion">Servicios para <br> Estudiantes</a>
+            <p class="seccion">Apoyo al <br> Estudiante</p>
+            <p class="seccion">Información <br> Administrativa</p>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="container">
+            <div class="columna">
+                <div class="icono">
+                    <img src="imagenes/gmail.png" alt="Gmail">
+                    <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">Gmail</a>
+                </div>
+                <div class="icono">
+                    <img src="imagenes/office.png" alt="Office 365">
+                    <a href="https://www.office.com/" target="_blank">Office 365</a>
+                </div>
+                <div class="icono">
+                    <img src="imagenes/cosmos.png" alt="Cosmos">
+                    <a href="https://cosmos.unab.edu.co/" target="_blank">Cosmos</a>
+                </div>
+                <div class="icono">
+                    <img src="imagenes/tema.png" alt="Tema">
+                    <a href="https://tema.unab.edu.co/login/index.php" target="_blank">TEMA</a>
+                </div>
+                <div class="icono">
+                    <img src="imagenes/biblioteca.png" alt="Noticias">
+                    <a href="file:///C:/Users/PORTBIBLIOTECA/Desktop/UNAB%20access/wilson_dise%C3%B1o/noticias.html" target="_blank">Noticias</a>
+                </div>
+                <div class="icono">
+                    <img src="imagenes/bienestar.png" alt="Bienestar U">
+                    <p>Bienestar <br> en línea</p>
+                </div>
+            </div>
+            <main>
+                <div class="imagen-botones">
+                    <img src="imagenes/Fachada-El-Jardin.jpg" alt="UNAB">
+                    <a href="https://www.flickr.com/photos/193538364@N08/albums/" target="_blank">
+                        <button type="button" class="galeria-btn">Galería UNAB</button>
+                    </a>
+                </div>
+            </main>
+            <div class="columnaR">
+                <img src="imagenes/noticias.png" alt="Noticias">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="pieDePagina">
+            <img src="imagenes/logoPie.png">
+            <ul class="InfoUNAB">
+                <p>Universidad Autonoma de Bucaramanga</p>
+                <p>Avenida 42 No. 48-11 | PBX (7)6436111</p>
+                <p>NIT: 890.200.499-9</p>
+                <p>© Todos los derechos reservados</p>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
